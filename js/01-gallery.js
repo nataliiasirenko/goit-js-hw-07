@@ -26,7 +26,9 @@ function handleImageClick(e) {
     return;
   }
   const instance = basicLightbox.create(`
+  <div class="modal">
   <img src="${e.target.dataset.source}" width -"800" height-"600">
+  </div>
 `);
   instance.show();
 
@@ -36,3 +38,14 @@ function handleImageClick(e) {
     }
   });
 }
+
+// const instance = basicLightbox.create(`
+//     <div class="modal">
+//         <p>
+//             Your first lightbox with just a few lines of code.
+//             Yes, it's really that simple.
+//         </p>
+//     </div>
+// `)
+
+// instance.show()
